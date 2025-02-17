@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data.js - Jagveer Singh</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1a1a1a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 40px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 12px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 100px 20px 20px;
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: #444;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact-icons a:hover {
+            color: #555;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project {
+            background-color: #ffffff;
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        .resume {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        .resume a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .resume a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #pp{
+            float: left;
+            clip-path: circle(40%);
+            shape-outside: circle(45%);
+            border: 32px solid #000000;
+            padding:3px; 
+            margin:4px
+        }
+
+        .about {
+            padding: 10px;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="window.location.href='#home'">&lt;/&gt; data.js</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header id="home">
+        <h1>Hi, I'm Jagveer Singh</h1>
+        <p>Welcome to <b>&lt;/&gt; data.js</b> - It's my Portfolio website</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+        <img src="profile_picture.jpg" alt="Jagveer Singh" id="pp"  width="300" height="300">
+        <p>I'm a Support Specialist turned Data Science Enthusiast with a knack for problem-solving, automation, and making sense of data. 🚀 I love working with SQL, Python, Power BI, and Excel, whether it’s for analyzing trends, optimizing workflows, or simplifying complex tasks.</p>
+        <p>By day, I help customers and businesses with their tech and compliance challenges. By night, I dive into data, analytics, and automation, trying to turn raw numbers into meaningful insights. I started my career in support specialist, working at HCLTech and Revolut, where I handled KYC, AML, fraud detection, and backend operations. Over time, I realized my love for data-driven problem-solving, so I started sharpening my skills in SQL, Python, and Power BI.</p>
+        <p>I’m always learning and exploring new ways to improve efficiency—right now, I’m diving into web and backend development. When I’m not working, you’ll probably find me learning something new, brainstorming ideas, or geeking out over tech trends.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>📊 Sales Data Dashboard (Power BI & Excel)</h3>
+                <p>Overview: Built an interactive dashboard to analyze sales trends, customer behavior, and product performance.</p>
+                   <ul>Key Features:</ul>
+                    <li>Data cleaning & transformation in Excel</li>
+                    <li>Dynamic visuals & KPIs using Power BI</li> 
+                    <li>Insights on revenue, sales trends & customer preferences</li>
+                    <p>Impact: Helped identify top-performing products, peak sales periods, and areas for improvement, leading to a 10% boost in sales efficiency.</p>
+            </div>
+            <div class="project">
+                <h3>📈 Fraud Detection System (SQL & Python)</h3>
+                <p>Overview: Designed a fraud detection model to identify suspicious transactions in financial data.</p>
+                <ul>Key Features:</ul>
+                 <li>Used SQL to filter & analyze high-risk transactions</li> 
+                 <li>Applied Python (Pandas & Scikit-Learn) for anomaly detection</li>
+                 <li>Created alerts for unusual spending patterns</li>
+                <p>Impact: Improved fraud detection accuracy by 30%, reducing false positives and ensuring better risk management.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+            <a href="mailto:jagveer@example.com">Email</a>
+            <a href="https://github.com/jagveer98" target="_blank">GitHub</a>
+            <a href="https://medium.com/@jagveer600" target="_blank">Medium</a>
+            <a href="https://linkedin.com/in/jagveersingh98" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&lt;/&gt; data.js | Built by Jagveer Singh</p>
+    </footer>
+</body>
+</html>
